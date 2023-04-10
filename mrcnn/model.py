@@ -18,6 +18,7 @@ import multiprocessing
 import numpy as np
 import skimage.transform
 import tensorflow as tf
+tf.compat.v1.disable_v2_behavior()
 import keras
 import keras.backend as K
 import keras.layers as KL
