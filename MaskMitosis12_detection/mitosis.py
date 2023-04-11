@@ -102,6 +102,7 @@ class MitosisDataset(utils.Dataset):
         assert subset in ["train", "test"]
         subset_dir = subset
         dataset_dir = os.path.join(dataset_dir, subset_dir)	
+        print(dataset_dir)
         image_ids = next(os.walk(dataset_dir))[1]
                     
         # Add images
