@@ -4,6 +4,8 @@ import _pickle as cPickle
 import numpy as np
 import math
 from PIL import Image
+Image.MAX_IMAGE_PIXELS = None
+
 
 def parse_anno(filename):
     objects = []
